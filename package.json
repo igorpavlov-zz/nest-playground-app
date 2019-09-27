@@ -1,8 +1,8 @@
 {
   "name": "nest-playground-app",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "This is just a Nest.js playground application",
+  "author": "Igor Pavlov",
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc -p tsconfig.build.json",
