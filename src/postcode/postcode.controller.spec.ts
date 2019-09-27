@@ -35,7 +35,7 @@ describe('PostcodeController', () => {
     });
 
     it('returns data about postcode', () => {
-      expect(result).toEqual({
+      expect(resultToBeTested).toEqual({
         requestedPostcode: samplePostcode,
       });
     });
