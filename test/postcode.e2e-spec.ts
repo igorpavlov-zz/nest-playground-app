@@ -23,8 +23,7 @@ describe('PostcodeController (e2e)', () => {
   });
 
   describe('postcode info', () => {
-    const samplePostcode = 'SW1A0AA';
-    const sampleDistrict = 'Westminster';
+    const samplePostcode = postcodeMock.constants.samplePostcode;
 
     describe('when postcode is valid', () => {
       beforeEach(() => {
@@ -41,7 +40,7 @@ describe('PostcodeController (e2e)', () => {
           .expect(200)
           .expect({
             requestedPostcode: samplePostcode,
-            district: sampleDistrict,
+            district: postcodeMock.constants.sampleDistrict,
           });
       });
     });

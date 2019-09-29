@@ -2,6 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { HttpModule } from '@nestjs/common';
 import { PostcodeController } from './postcode.controller';
 import { PostcodeService } from './postcode.service';
+import postcodeMock from '../../mocks/postcode.mock';
 
 describe('PostcodeController', () => {
   let postcodeController: PostcodeController;
@@ -31,8 +32,8 @@ describe('PostcodeController', () => {
   });
 
   describe('postcode info', () => {
-    const samplePostcode = 'SW1A0AA';
-    const sampleDistrict = 'Westminster';
+    const samplePostcode = postcodeMock.constants.samplePostcode;
+    const sampleDistrict = postcodeMock.constants.sampleDistrict;
 
     beforeEach(() => {
       jest.spyOn(postcodeService, 'fetchPostcodeDistrict').mockImplementationOnce(() => new Promise(resolve => resolve(sampleDistrict)));

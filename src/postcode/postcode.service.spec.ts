@@ -41,8 +41,6 @@ describe('PostcodeService', () => {
   });
 
   describe('fetchPostcodeDistrict', () => {
-    const sampleDistrict = 'Westminster';
-
     beforeEach(() => {
       const result: AxiosResponse = {
         data: {
@@ -63,7 +61,7 @@ describe('PostcodeService', () => {
       postcodeService
         .fetchPostcodeDistrict('SW1A0AA')
         .then(result =>
-          expect(result).toEqual(sampleDistrict),
+          expect(result).toEqual(postcodeMock.constants.sampleDistrict),
         );
     });
   });

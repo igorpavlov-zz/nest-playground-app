@@ -1,4 +1,10 @@
+const constants = {
+  sampleDistrict: 'Westminster',
+  samplePostcode: 'SW1A0AA',
+};
+
 export default {
+  constants,
   responds: {
     postcodeInformationByPostcode : {
       postcode: 'SW1A 0AA',
@@ -17,7 +23,7 @@ export default {
       incode: '0AA',
       outcode: 'SW1A',
       parliamentary_constituency: 'Cities of London and Westminster',
-      admin_district: 'Westminster',
+      admin_district: constants.sampleDistrict,
       parish: 'Westminster, unparished area',
       admin_county: null,
       admin_ward: 'St James\'s',
