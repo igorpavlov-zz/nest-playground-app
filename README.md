@@ -16,6 +16,8 @@ This project is a demonstration of Nest.js usage for various purposes.
 
 # Usage
 
+The app is hosted at [Heroku](https://igorpavlov-nest-playground-app.herokuapp.com).
+
 ## Postcode module
 
 Demonstrates using external API resource.
@@ -81,6 +83,10 @@ $ yarn run start
 $ yarn run start:dev
 
 # production mode
+# Note: If you'd like the application to run on a port other than 3000,
+# please specify it in the PORT environment variable.
+# Note: Please note, some services like Heroku will run the `build` script automatically.
+$ yarn run build
 $ yarn run start:prod
 ```
 
