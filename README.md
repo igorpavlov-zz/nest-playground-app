@@ -34,6 +34,7 @@ At the moment this project demonstrates:
 
 ### Basics
 
+- Yarn
 - Nest.js
 - TypeScript
 - Jest
@@ -68,6 +69,9 @@ At the moment this project demonstrates:
 - 100% lint compliance
 
 # Installation
+
+This application requires NodeJS `10.16.3 LTS`.
+You may use `nvm` to install this exact version.
 
 ```bash
 $ yarn install
